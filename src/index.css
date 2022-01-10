@@ -73,6 +73,11 @@ button {
   color: red;
 }
 
+.attribution,
+.attribution a {
+  color: white;
+}
+
 @media screen and (min-width: 600px) {
   .App {
     padding: 0 20%;

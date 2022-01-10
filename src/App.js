@@ -96,7 +96,12 @@ function App() {
         </button>
       </form>
 
-      <p className="attribution">By Abdulkareem Ridwan Gboyega</p>
+      <p className="attribution">
+        By
+        <a href="https://github.com/reedwane/dokitari-test">
+          Abdulkareem Ridwan Gboyega
+        </a>
+      </p>
     </div>
   );
 }
