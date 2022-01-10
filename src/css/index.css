@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  margin: 0 auto;
+  background-color: #ff7a7a;
+  background-image: url("../bg.png");
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 10%;
+  box-sizing: border-box;
+}
+.App .App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+@media screen and (min-width: 600px) {
+  .App {
+    padding: 0 20%;
+  }
+}
+.App form {
+  background-color: white;
+  padding: 10%;
+  border-radius: 20px;
+}
+.App form input {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  margin: 5% auto;
+  width: 80%;
+  height: 3em;
+  text-indent: 2em;
+}
+.App form input:focus {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+.App form label {
+  display: inline-block;
+  text-align: left;
+}
+.App form button {
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  height: 3em;
+}
+.App form .error {
+  font-size: 0.8rem;
+  color: red;
+}
+.App .attribution {
+  color: white;
+}
+.App .attribution a {
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */
