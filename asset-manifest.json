@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dokitari-test/static/css/main.3ada1d2b.css",
-    "main.js": "/dokitari-test/static/js/main.5ce9ae74.js",
+    "main.css": "/dokitari-test/static/css/main.305f10a8.css",
+    "main.js": "/dokitari-test/static/js/main.c9117ef9.js",
     "index.html": "/dokitari-test/index.html",
-    "main.3ada1d2b.css.map": "/dokitari-test/static/css/main.3ada1d2b.css.map",
-    "main.5ce9ae74.js.map": "/dokitari-test/static/js/main.5ce9ae74.js.map"
+    "main.305f10a8.css.map": "/dokitari-test/static/css/main.305f10a8.css.map",
+    "main.c9117ef9.js.map": "/dokitari-test/static/js/main.c9117ef9.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ada1d2b.css",
-    "static/js/main.5ce9ae74.js"
+    "static/css/main.305f10a8.css",
+    "static/js/main.c9117ef9.js"
   ]
 }
