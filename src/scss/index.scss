@@ -56,8 +56,13 @@ body {
 
     button {
       font-family: "Poppins", sans-serif;
+      background-color: hsl(154, 59%, 51%);
+      color: white;
+      border: none;
+      border-radius: 5px;
       width: 50%;
       height: 3em;
+      cursor: pointer;
     }
 
     .error {

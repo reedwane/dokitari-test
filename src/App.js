@@ -9,15 +9,16 @@ function App() {
   const [passerror, setPassError] = useState(false);
   const [emailerror, setEmailError] = useState(false);
 
+  // a valid email like test@gmail.com
+  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+  // at least one uppercase, one lowercase, one number/special character, 8 chars long
+  // example: Abcdefge@
+  const passwordRegex =
+    /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
+
   const handleSubmit = (e, email, password, check) => {
     e.preventDefault();
-    // a valid email like test@gmail.com
-    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-    // at least one uppercase, one lowercase, one number/special character, 8 chars long
-    // example: Abcdefge@
-    const passwordRegex =
-      /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
 
     if (emailRegex.test(email)) {
       // if the email is a valid email
@@ -53,8 +54,15 @@ function App() {
           type="email"
           placeholder="Input your email"
           value={email}
+          onKeyUp={() => {
+            // check if the value is correct after keyup
+            if (emailRegex.test(email)) {
+              setEmailError(false);
+            } else {
+              setEmailError(true);
+            }
+          }}
           onChange={(e) => {
-            setEmailError(false);
             setEmail(e.target.value);
           }}
         />
@@ -70,9 +78,16 @@ function App() {
           type="password"
           placeholder="input your password"
           value={password}
+          onKeyUp={() => {
+            // check if the value is correct after keyup
+            if (passwordRegex.test(password)) {
+              setPassError(false);
+            } else {
+              setPassError(true);
+            }
+          }}
           onChange={(e) => {
             setPassword(e.target.value);
-            setPassError(false);
           }}
         />
 
@@ -82,9 +97,16 @@ function App() {
           type="password"
           placeholder="confirm your password"
           value={check}
+          onKeyUp={() => {
+            // check if the value is correct after keyup
+            if (check === password) {
+              setCheckError(false);
+            } else {
+              setCheckError(true);
+            }
+          }}
           onChange={(e) => {
             setCheck(e.target.value);
-            setCheckError(false);
           }}
         />
 
